@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  background: url("./assets/28275093761af2b350d34f1-69695326.jpeg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+
+}
+
+.viewbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  z-index: 1;
+  background-color: rgba(122, 49, 49, 0.297);
+  color: aliceblue;
+
+}
+
+.button-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  z-index: 1;
+  height: 100vh;
+}
+
+p {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+.book {
+  display: inline-block;
+  padding-top: 40px;
+}
+
+button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: 80vh;
+  width: 80vh;
+  transition: 0.4s ease;
+
+}
+
+button:focus {
+  outline: none;
+}
+
+button::selection {
+  outline: none;
+}
+
+button:hover {
+  transition: 0.4s ease;
+  opacity: 0.8;
+}
+
+/* Additional styling for the buttons */
+button:disabled {
+  opacity: 0.2;
+  cursor: default;
+}
+
+button:disabled:hover {
+  opacity: 0.3;
+}
+
+/* Additional styling for the book container */
+.book-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  max-width: 100vh;
+  color: transparent;
+}
+
+/* Additional styling for the page indicator */
+p {
+  text-align: center;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.428);
+  width: 60vw;
+}
+
+
+
+@media (max-width: 600px) {
+  Page {
+    max-height: 10vh;
+    transition: all 0.5s ease;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.peque {
+  height: 80vh;
+  width: 80vh;
+}
+.grande {
+  height: 80vh;
+  width: 40vh;
+}
